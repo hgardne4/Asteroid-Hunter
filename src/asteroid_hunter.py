@@ -22,10 +22,10 @@ NASA_API_KEY = '6aGRFDDOVzBiRf032kKyBbHRhOempO7kgnjHBcZy'
 link = 'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=' + NASA_API_KEY 
 
 """
-Function that prints out the json data returned by the NASA API with only the closest approach returned.
-- From first inspection, the 'close_approach_date' field is a string not a date
-	- would normally have to convert to some numerical type and compare values, but they are already in increasing order
-	- therefore, just set the 'close_approach_data' section to contain only the first approach in the list
+Function that prints out the json data returned by the NASA API with only the closest approach returned per asteroid.
+Need to change the list of close_approach_data to be a single element containing only the minimum distance value.
+Assuming this minimum distance value is an astronomical unit:
+	- An astronomical unit (au) is approximatly 150 million kilometers
 """
 def asteroid_closest_approach():
 	# using the requests library, call the NASA API 
@@ -41,11 +41,19 @@ def asteroid_closest_approach():
 		file = open('src/outputs/asteroid_closest_approach_OUTPUT.txt', 'w')
 		# loop through the limit of the response
 		for i in range(len(response)):
-			# update the 'close_approach_data' to contain only the first element and print/add contents to output file
-			response[i]['close_approach_data'] = response[i]['close_approach_data'][0]
+			# initialize a list that will have all the current au_values for this particular asteroid
+			au_values = []
+			# loop through the close_approach_data list for this asteroid and update the au_values list iff it's orbiting body is Earth
+			for j in range(len(response[i]['close_approach_data'])):
+				if response[i]['close_approach_data'][j]['orbiting_body'] == "Earth":
+					au_values.append(float(response[i]['close_approach_data'][j]['miss_distance']['astronomical']))
+			# determine the minimum value of this list
+			min_val = min(au_values)
+			# update the close_approach_data to contain only the min element using a list comprehension
+			response[i]['close_approach_data'] = [response[i]['close_approach_data'][x] for x in range(len(response[i]['close_approach_data'])) if (float(response[i]['close_approach_data'][x]['miss_distance']['astronomical']) == min_val)][0]
 			# print and write to the output file, the output of the response
-			print("ASTEROID NUMER: " + str(i+1))
-			file.write('{}\n{}\n\n'.format("ASTEROID NUMER: " + str(i+1), json.dumps(response[i], indent=2)))
+			print("ASTEROID NUMER: " + str(i+1) + " with MIN VAL: " + str(min_val))
+			file.write('{}\n{}\n\n'.format("ASTEROID NUMER: " + str(i+1) + " with MIN VAL: " + str(min_val), json.dumps(response[i], indent=2)))
 			print(json.dumps(response[i], indent=2) + "\n")
 		file.close()
 	# o/w throw exception
@@ -91,7 +99,7 @@ def month_closest_approaches(start_date, end_date):
 
 	# if the distance between dates is > 7, then recursively call the function with each iterative week
 	elif start_year == end_year and start_month == end_month and abs(end_day - start_day) > 7:
-		# initialize a counter to see how many weeks are needed to call the API (i.e. (end_day - start_day)/7)
+		# initialize a counter to see how many calls are needed to the API (i.e. ceiling([end_day - start_day]/7))
 		counter = end_day - start_day
 		# initialize a temp_date variable to be the current date in the loop
 		temp_date = start_date
@@ -126,6 +134,7 @@ def date_helper(input_date, x):
 	# now check specific cases and update the day value accordingly
 	if day < 10:
 		day_returned = '0' + str(day)
+	# assumption that the dates must fall in the same month/year
 	elif day > 31:
 		raise DateException("Error in date_helper() function. Date goes in between multiple months/years.")
 	else:
@@ -135,11 +144,11 @@ def date_helper(input_date, x):
 
 
 """
-Function that returns the 10 nearest misses (historical or expected) of asteroids impacting Earth
+Function that returns the x nearest misses (historical or expected) of asteroids impacting Earth.
 - An astronomical unit (au) is approximatly 150 million kilometers
 	- Will determine miss distances based on this value
 Input:
-	x -> the number of "nearest misses" the user wishes to display
+	x -> the number of "nearest misses" the user wishes to display (the requirments only required to display 10)
 """
 def nearest_misses(x):
 	# using the requests library, call the NASA API 
@@ -148,10 +157,8 @@ def nearest_misses(x):
 	STATUS_CODE = response.status_code
 	# if successful continue
 	if STATUS_CODE == 200:
-		# initialize 3 lists used for determining the astronomical unit values, and convert response to json
+		# initialize a list used for determining the astronomical unit values, and convert response to json
 		au_values = []
-		first_iteration_value = []
-		second_iteration_value = []
 		response = response.json()
 
 		# now loop through the range of the two main lists (in the response json) and append Earth-orbiting asteroid values
@@ -159,23 +166,38 @@ def nearest_misses(x):
 			for j in range(len(response['near_earth_objects'][i]['close_approach_data'])):
 				# if the current orbital data has an orbiting body of Earth, update the corresponding lists
 				if response['near_earth_objects'][i]['close_approach_data'][j]['orbiting_body'] == "Earth":
-					au_values.append(response['near_earth_objects'][i]['close_approach_data'][j]['miss_distance']['astronomical'])
-					first_iteration_value.append(i)
-					second_iteration_value.append(j)
+					au_values.append(float(response['near_earth_objects'][i]['close_approach_data'][j]['miss_distance']['astronomical']))
+		
+		file = open('src/outputs/nearest_misses_OUTPUT.txt', 'a')
 
-		file = open('src/outputs/nearest_misses_OUTPUT.txt', 'w')
-		# now we have 3 lists of corresponding values, so print the minimums by iterating and removing the current min value
+		# now we have a list of all the au_values, so loop through the input number and print the associated data for that min value
 		for i in range(x):
+			# boolean value used to save computation time and determines when to break the loop
+			found = False
 			# the temporary index used to determine where in the dictionary the asteroid is
-			temp_index = au_values.index(min(au_values))
-			# print and write to the output file, the output of the response
-			print("Nearest miss number: " + str(i+1))
-			print(json.dumps(response['near_earth_objects'][first_iteration_value[temp_index]]['close_approach_data'][second_iteration_value[temp_index]], indent=2))
-			file.write("{}\n{}\n".format("Nearest miss number: " + str(i+1), json.dumps(response['near_earth_objects'][first_iteration_value[temp_index]]['close_approach_data'][second_iteration_value[temp_index]], indent=2)))
-			# remove the current min index from the lists for the next iteration
-			au_values.pop(temp_index)
-			first_iteration_value.pop(temp_index)
-			second_iteration_value.pop(temp_index)
+			current_min = min(au_values)
+			# loop through all the values in the lists of near earth object and close approach data 
+			for j in range(len(response['near_earth_objects'])):
+				for k in range(len(response['near_earth_objects'][j]['close_approach_data'])):
+					# check to see if the current au_value is the min, if so print and break current loop
+					if float(response['near_earth_objects'][j]['close_approach_data'][k]['miss_distance']['astronomical']) == current_min:
+						# need to store the current list of close_approach_data in a temporary variable to re-update after printing
+						temp = response['near_earth_objects'][j]['close_approach_data']
+						# set the close_approach_data list to only contain the value with the lowest miss_distance
+						response['near_earth_objects'][j]['close_approach_data'] = [response['near_earth_objects'][j]['close_approach_data'][k]]
+						# print and write to the output file, the output of the response
+						print("\nNearest miss number: " + str(i+1) + " with MIN VAL: " + str(current_min))
+						print(json.dumps(response['near_earth_objects'][j], indent=2))
+						file.write("\n{}\n{}\n".format("Nearest miss number: " + str(i+1) + " with MIN VAL: " + str(current_min), json.dumps(response['near_earth_objects'][j], indent=2)))
+						# change the close_approach_data back to the original list
+						response['near_earth_objects'][j]['close_approach_data'] = temp
+						# break the double loop and continue to the next mon value
+						found = True
+						break
+				if found:
+					break
+			# remove the current min from the au_list for the next iteration
+			au_values.remove(current_min)
 		file.close()
 	# o/w throw exception
 	else:
@@ -187,14 +209,15 @@ if __name__ == '__main__':
 	print("This project creates a data pipeline to track asteroids based on certain criteria.")
 	print("Refer to the outputs folder which contains the output from these functions.")
 	print("{}\n\t{}\n\t{}\n\t{}".format("Functions to test", "1. asteroid_closest_approach()", "2. month_closest_approaches()", "3. nearest_misses()"))
+	# depending on the user input, complete the corresponding function
 	user_input = input("Enter a number to test a corresponding function (i.e. '1' for testing asteroid_closest_approach()): ")
 	
-	# depending on the user input, complete the corresponding function
 # asteroid_closest_approach():
 	if int(user_input) == 1:
 		print("Testing the asteroid_closest_approach() function: \n")
 		asteroid_closest_approach()
 		print("Completed the asteroid_closest_approach() function, scroll to top for full output.")
+
 # month_closest_approaches():
 	elif int(user_input) == 2:
 		# since the month_closest_approaches_OUTPUT.txt file is appended in other functions, need to initialize it as empty
@@ -211,8 +234,14 @@ if __name__ == '__main__':
 			print("Completed the month_closest_approaches() function, scroll to top for full output.")
 		except: 
 			raise UserInputException("Unrecognized input, terminating...")
+
 # nearest_misses():
 	elif int(user_input) == 3:
+		# since the month_closest_approaches_OUTPUT.txt file is appended in other functions, need to initialize it as empty
+		# instead of deleting the file each time
+		file = open('src/outputs/nearest_misses_OUTPUT.txt', 'w')
+		file.write("")
+		file.close()
 		print("Testing the nearest_misses() function:")
 		try:
 			num_of_nearest_misses = input("Enter the number of nearest misses wished to be displayed: ")
