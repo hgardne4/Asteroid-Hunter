@@ -71,8 +71,8 @@ ASTEROID NUMER: 1
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -151,8 +151,8 @@ ASTEROID NUMER: 2
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -231,8 +231,8 @@ ASTEROID NUMER: 3
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -311,8 +311,8 @@ ASTEROID NUMER: 4
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -391,8 +391,8 @@ ASTEROID NUMER: 5
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -471,8 +471,8 @@ ASTEROID NUMER: 6
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -551,8 +551,8 @@ ASTEROID NUMER: 7
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -631,8 +631,8 @@ ASTEROID NUMER: 8
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -711,8 +711,8 @@ ASTEROID NUMER: 9
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -791,8 +791,8 @@ ASTEROID NUMER: 10
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -871,8 +871,8 @@ ASTEROID NUMER: 11
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -951,8 +951,8 @@ ASTEROID NUMER: 12
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -1031,8 +1031,8 @@ ASTEROID NUMER: 13
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -1111,8 +1111,8 @@ ASTEROID NUMER: 14
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -1191,8 +1191,8 @@ ASTEROID NUMER: 15
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "APO",
-      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo"
+      "orbit_class_description": "Near-Earth asteroid orbits which cross the Earth\u2019s orbit similar to that of 1862 Apollo",
+      "orbit_class_range": "a (semi-major axis) > 1.0 AU; q (perihelion) < 1.017 AU"
     }
   },
   "is_sentry_object": false
@@ -1271,8 +1271,8 @@ ASTEROID NUMER: 16
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -1351,8 +1351,8 @@ ASTEROID NUMER: 17
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -1431,8 +1431,8 @@ ASTEROID NUMER: 18
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -1474,45 +1474,45 @@ ASTEROID NUMER: 19
     "close_approach_date_full": "1908-Apr-11 07:57",
     "epoch_date_close_approach": -1947859380000,
     "relative_velocity": {
-      "kilometers_per_second": "13.2592723865",
-      "kilometers_per_hour": "47733.3805912373",
-      "miles_per_hour": "29659.6664012607"
+      "kilometers_per_second": "13.2592713862",
+      "kilometers_per_hour": "47733.3769904561",
+      "miles_per_hour": "29659.6641638753"
     },
     "miss_distance": {
-      "astronomical": "0.4125346441",
-      "lunar": "160.4759765549",
-      "kilometers": "61714304.058568067",
-      "miles": "38347490.3452386446"
+      "astronomical": "0.4125346129",
+      "lunar": "160.4759644181",
+      "kilometers": "61714299.391114523",
+      "miles": "38347487.4450174974"
     },
     "orbiting_body": "Earth"
   },
   "orbital_data": {
-    "orbit_id": "631",
-    "orbit_determination_date": "2021-10-11 06:34:55",
+    "orbit_id": "632",
+    "orbit_determination_date": "2021-10-13 06:27:49",
     "first_observation_date": "1973-03-10",
     "last_observation_date": "2021-10-11",
     "data_arc_in_days": 17747,
-    "observations_used": 4216,
+    "observations_used": 4219,
     "orbit_uncertainty": "0",
     "minimum_orbit_intersection": ".0628242",
     "jupiter_tisserand_invariant": "4.639",
     "epoch_osculation": "2459396.5",
-    "eccentricity": ".2558916178993439",
-    "semi_major_axis": "1.430526800943286",
-    "inclination": "8.70535174293056",
-    "ascending_node_longitude": "246.3250220737005",
-    "orbital_period": "624.9459025628246",
-    "perihelion_distance": "1.064466983401536",
-    "perihelion_argument": "338.3870790051373",
-    "aphelion_distance": "1.796586618485037",
-    "perihelion_time": "2459298.690642832632",
-    "mean_anomaly": "56.343066553209",
-    "mean_motion": ".5760498605138225",
+    "eccentricity": ".255891617889754",
+    "semi_major_axis": "1.430526800949816",
+    "inclination": "8.705351742916514",
+    "ascending_node_longitude": "246.3250220732343",
+    "orbital_period": "624.9459025671039",
+    "perihelion_distance": "1.064466983420114",
+    "perihelion_argument": "338.3870789939818",
+    "aphelion_distance": "1.796586618479519",
+    "perihelion_time": "2459298.690642826009",
+    "mean_anomaly": "56.3430665566383",
+    "mean_motion": ".5760498605098781",
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false
@@ -1591,8 +1591,8 @@ ASTEROID NUMER: 20
     "equinox": "J2000",
     "orbit_class": {
       "orbit_class_type": "AMO",
-      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU",
-      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor"
+      "orbit_class_description": "Near-Earth asteroid orbits similar to that of 1221 Amor",
+      "orbit_class_range": "1.017 AU < q (perihelion) < 1.3 AU"
     }
   },
   "is_sentry_object": false

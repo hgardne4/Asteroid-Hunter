@@ -1,0 +1,180 @@
+Nearest miss number: 1
+{
+  "close_approach_date": "1906-03-06",
+  "close_approach_date_full": "1906-Mar-06 00:36",
+  "epoch_date_close_approach": -2014154640000,
+  "relative_velocity": {
+    "kilometers_per_second": "15.1210055876",
+    "kilometers_per_hour": "54435.620115225",
+    "miles_per_hour": "33824.1773988186"
+  },
+  "miss_distance": {
+    "astronomical": "0.0253331099",
+    "lunar": "9.8545797511",
+    "kilometers": "3789779.281515913",
+    "miles": "2354859.6492410794"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 2
+{
+  "close_approach_date": "1930-11-11",
+  "close_approach_date_full": "1930-Nov-11 22:54",
+  "epoch_date_close_approach": -1235091960000,
+  "relative_velocity": {
+    "kilometers_per_second": "17.7831918067",
+    "kilometers_per_hour": "64019.4905042122",
+    "miles_per_hour": "39779.2217524645"
+  },
+  "miss_distance": {
+    "astronomical": "0.0282672578",
+    "lunar": "10.9959632842",
+    "kilometers": "4228721.557620886",
+    "miles": "2627605.7322087868"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 3
+{
+  "close_approach_date": "1994-08-25",
+  "close_approach_date_full": "1994-Aug-25 10:10",
+  "epoch_date_close_approach": 777809400000,
+  "relative_velocity": {
+    "kilometers_per_second": "12.2172327328",
+    "kilometers_per_hour": "43982.0378380397",
+    "miles_per_hour": "27328.7278999753"
+  },
+  "miss_distance": {
+    "astronomical": "0.0333047234",
+    "lunar": "12.9555374026",
+    "kilometers": "4982315.681579158",
+    "miles": "3095867.4072540604"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 4
+{
+  "close_approach_date": "2082-05-12",
+  "close_approach_date_full": "2082-May-12 11:04",
+  "epoch_date_close_approach": 3545809440000,
+  "relative_velocity": {
+    "kilometers_per_second": "17.5067897677",
+    "kilometers_per_hour": "63024.4431638064",
+    "miles_per_hour": "39160.9380314218"
+  },
+  "miss_distance": {
+    "astronomical": "0.0333060981",
+    "lunar": "12.9560721609",
+    "kilometers": "4982521.333771047",
+    "miles": "3095995.1936005686"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 5
+{
+  "close_approach_date": "2119-08-27",
+  "close_approach_date_full": "2119-Aug-27 16:10",
+  "epoch_date_close_approach": 4722595800000,
+  "relative_velocity": {
+    "kilometers_per_second": "12.3889908695",
+    "kilometers_per_hour": "44600.367130268",
+    "miles_per_hour": "27712.9336760268"
+  },
+  "miss_distance": {
+    "astronomical": "0.0336165289",
+    "lunar": "13.0768297421",
+    "kilometers": "5028961.120233443",
+    "miles": "3124851.5388217934"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 6
+{
+  "close_approach_date": "1901-08-23",
+  "close_approach_date_full": "1901-Aug-23 17:36",
+  "epoch_date_close_approach": -2157171840000,
+  "relative_velocity": {
+    "kilometers_per_second": "11.7628208198",
+    "kilometers_per_hour": "42346.154951226",
+    "miles_per_hour": "26312.2538917771"
+  },
+  "miss_distance": {
+    "astronomical": "0.0338991377",
+    "lunar": "13.1867645653",
+    "kilometers": "5071238.794756699",
+    "miles": "3151121.6676084862"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 7
+{
+  "close_approach_date": "2046-11-13",
+  "close_approach_date_full": "2046-Nov-13 04:49",
+  "epoch_date_close_approach": 2425697340000,
+  "relative_velocity": {
+    "kilometers_per_second": "17.982455941",
+    "kilometers_per_hour": "64736.8413876504",
+    "miles_per_hour": "40224.9556944542"
+  },
+  "miss_distance": {
+    "astronomical": "0.0352916933",
+    "lunar": "13.7284686937",
+    "kilometers": "5279562.146373271",
+    "miles": "3280567.7958062998"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 8
+{
+  "close_approach_date": "2137-06-15",
+  "close_approach_date_full": "2137-Jun-15 10:22",
+  "epoch_date_close_approach": 5284347720000,
+  "relative_velocity": {
+    "kilometers_per_second": "28.2663784245",
+    "kilometers_per_hour": "101758.9623283404",
+    "miles_per_hour": "63229.0618978513"
+  },
+  "miss_distance": {
+    "astronomical": "0.0395594549",
+    "lunar": "15.3886279561",
+    "kilometers": "5918010.191401063",
+    "miles": "3677281.0151501494"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 9
+{
+  "close_approach_date": "2152-05-14",
+  "close_approach_date_full": "2152-May-14 23:26",
+  "epoch_date_close_approach": 5755015560000,
+  "relative_velocity": {
+    "kilometers_per_second": "16.6828770825",
+    "kilometers_per_hour": "60058.357496834",
+    "miles_per_hour": "37317.9277457411"
+  },
+  "miss_distance": {
+    "astronomical": "0.0403427626",
+    "lunar": "15.6933346514",
+    "kilometers": "6035191.354875662",
+    "miles": "3750094.0137496556"
+  },
+  "orbiting_body": "Earth"
+}
+Nearest miss number: 10
+{
+  "close_approach_date": "1968-06-14",
+  "close_approach_date_full": "1968-Jun-14 20:39",
+  "epoch_date_close_approach": -48828060000,
+  "relative_velocity": {
+    "kilometers_per_second": "29.6050248092",
+    "kilometers_per_hour": "106578.0893130376",
+    "miles_per_hour": "66223.4799956483"
+  },
+  "miss_distance": {
+    "astronomical": "0.0424822206",
+    "lunar": "16.5255838134",
+    "kilometers": "6355249.714630122",
+    "miles": "3948969.0565428036"
+  },
+  "orbiting_body": "Earth"
+}
