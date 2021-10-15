@@ -1598,5 +1598,3 @@ ASTEROID NUMER: 20
   "is_sentry_object": false
 }
 
-
-
