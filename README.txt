@@ -11,7 +11,7 @@ Folders:
 
 Files:
     README.txt                                       -> my project explanation
-    Makefile					                     -> file that runs the project
+    Makefile                                         -> file that runs the project
     instructions/README.md                           -> directions for the project provided
     src/asteroid_hunter.py                           -> my Python3 solution
     src/outputs/asteroid_closest_approach_OUTPUT.txt -> output file from testing the asteroid_closest_approach() function
